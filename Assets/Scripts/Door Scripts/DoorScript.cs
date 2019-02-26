@@ -46,9 +46,9 @@ public class DoorScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "Player")
-            if(DoorScript.instance !=null)
-            {
-                DoorScript.instance.DecrementCollectables();
-            }
+        {
+            GameObject.Find("Gameplay Controller").GetComponent<GameplayController>().PlayerDied();
+        }
+           
     }
 }

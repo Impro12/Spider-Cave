@@ -7,11 +7,12 @@ public class LevelController : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("LevelMenu");
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void BackToMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
+
 }
